@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Close the Box
+            <meta charset="utf-8">
+        </title>
+        <link href="/proj3/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="appHeader" id='winner'>Shut the Box!</h1>
+        <div class="upper" id='upper'>
+            <p>Player 1:</p>
+            <input type="text" id="p1NameIn" name="p1Name"><br>
+            <p>Player 2:</p>
+            <input type="text" id="p2NameIn" name="p2Name"><br>
+            <button class="start" id='startBtn' type="submit">Start</button>
+        </div>
+        <main style="visibility: hidden;" id='gameArea'>
+            <h1 id='playerCurrent'>Player name</h1>
+            <div class="flexbox" id="numbersKnocked">
+                <div class="box" id="1">1</div>
+                <div class="box" id="2">2</div>
+                <div class="box" id="3">3</div>
+                <div class="box" id="4">4</div>
+                <div class="box" id="5">5</div>
+                <div class="box" id="6">6</div>
+                <div class="box" id="7">7</div>
+                <div class="box" id="8">8</div>
+                <div class="box" id="9">9</div>
+            </div>
+            <div class="grid">
+                <table class="scoreTable" id='scoreTable'>
+                    <tr>
+                        <td>
+                            .
+                        </td>
+                        <td>
+                            Player 1
+                        </td>
+                        <td>
+                            Player 2
+                        </td>
+                    </tr>
+                </table>
+                <div class=diceArea>
+                    <img src="/proj3/images/six.png" class="dice" alt="dice number one" id="d1"> <img src="/proj3/images/six.png" class="dice" alt="dice number two" id="d2">
+                </div>
+                <button class="roll" id="roll" type=submit disabled='disabled'>Roll</button>
+                <div class="optionsArea">
+                    <button class="sum" id="sum" type="submit" disabled = disabled>Sum</button>
+                    <button class="both" id="both" type="submit" disabled = disabled>Both</button>
+                    <button class="end" id="end" type="submit" disabled = disabled>End Turn</button>
+                    <button class='reset' id='reset' type='submit' disabled = 'disabled'>Reset</button>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="scripts.js"></script>
+</html>

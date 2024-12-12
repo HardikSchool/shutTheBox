@@ -1,0 +1,156 @@
+:root{
+    --c1: #8F2D56;/*dark red*/
+    --c2: #D81159;/*light red*/
+    --c3: #FFBC42; /*yellow*/
+    --c4: #0496FF;/*light blue*/
+    --c5: #006BA6;/*dark blue*/
+}
+body{
+    font-family: system-ui;
+    background-color: var(--c5);
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    text-align:center;
+}
+
+#reset-div{
+    display: none;
+}
+.appHeader{
+    margin: auto;
+    width: 200px;
+    border: 3px solid var(--c3);
+    border-radius: 5px;
+    padding: 10px;
+}
+.box{
+    display: inline-block;
+    width: 120px;
+    height: 150px;
+    max-width: 100%;
+    max-height: auto;
+    border: 2px;
+    background-color: var(--c4);
+    margin:3vw;
+}
+.shutBox{
+    display: inline-block;
+    width: 120px;
+    height: 150px;
+    max-width: 100%;
+    max-height: auto;
+    border: 2px;
+    background-color: var(--c5);
+    margin:3vw;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 100px;
+    gap: 10px;
+    grid-template-areas: "score1 dice options1"
+                         "score2 roll options2"
+}
+.start{
+    max-height: 100%;
+    max-width: auto;
+}
+.flexbox{
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: space-around;
+    background: var(--c2);
+    width: 100%;
+    max-height: auto;
+    border: 3px solid var(--c3);
+    border-radius: 5vh;
+}
+.scoreTable{
+    display: inline-table;
+    width: auto;
+    height: 100%;
+    border: 3px solid var(--c3);
+    border-radius: 20px;
+    background-color: var(--c4);
+    margin-top: 30px;
+    grid-row-start: score1;
+  grid-row-end: score2;
+}
+tr:nth-child(even) {
+    background-color: var(--c2);
+}
+td, th {
+    border: 1px solid var(--c3);
+    text-align: left;
+    padding: 8px;
+    border-radius: 20px;
+}
+.diceArea{
+    display: inline-block;
+    margin-top: 30px;
+    grid-area: dice;
+    max-height: 100%;
+    max-width: 1fr;
+}
+.dice{
+    max-height: 100%;
+    max-width: auto;
+}
+.roll{
+    display: inline-block;
+    grid-area: roll;
+    max-height: 100%;
+    max-width: auto;
+    border: 3px solid var(--c3);
+    border-radius: 20px;
+    background-color: var(--c2);
+}
+.optionsArea{
+    display: inline-block;
+    margin-top: 30px;
+    grid-row-start: options1;
+    grid-row-end: options2;
+    max-height: 100%;
+    max-width: 1fr;
+}
+.sum{
+    margin:5px;
+    display: block;
+    height: 25%;
+    width: 100%;
+    border: 3px solid var(--c3);
+    border-radius: 20px;
+    background-color: var(--c4);
+}
+.both{
+    margin:5px;
+    display: block;
+    height: 25%;
+    width: 100%;
+    border: 3px solid var(--c3);
+    border-radius: 20px;
+    background-color: var(--c4);
+}
+.end{
+    margin:5px;
+    display: block;
+    height: 25%;
+    width: 100%;
+    border: 3px solid var(--c3);
+    border-radius: 20px;
+    background-color: var(--c4);
+}
+.reset{
+    margin:5px;
+    display: block;
+    height: 25%;
+    width: 100%;
+    border: 3px solid var(--c3);
+    border-radius: 20px;
+    background-color: var(--c4);
+}
