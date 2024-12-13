@@ -65,22 +65,22 @@ function buttonLogic(){
 
 function findImage(number){
     if(number===1){
-        return '/proj3/images/one.png';
+        return '/shutTheBox/images/one.png';
     }
     if(number===2){
-        return '/proj3/images/two.png';
+        return '/shutTheBox/images/two.png';
     }
     if(number===3){
-        return '/proj3/images/three.png';
+        return '/shutTheBox/images/three.png';
     }
     if(number===4){
-        return '/proj3/images/four.png';
+        return '/shutTheBox/images/four.png';
     }
     if(number===5){
-        return '/proj3/images/five.png';
+        return '/shutTheBox/images/five.png';
     }
     if(number===6){
-        return '/proj3/images/six.png';
+        return '/shutTheBox/images/six.png';
     }
 }
 
